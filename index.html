@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #87CEEB; /* Light Sky Blue */
+            color: #000; /* Black for text */
+        }
+        header {
+            background-color: #00BFFF; /* Deep Sky Blue */
+            color: #FFF; /* White for text */
+            padding: 20px;
+            text-align: center;
+        }
+        .button {
+            background-color: #FFD700; /* Gold */
+            border: none;
+            color: #000; /* Black for text */
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .product {
+            border: 1px solid #000;
+            margin: 20px;
+            padding: 20px;
+            background-color: #FFF;
+        }
+        .footer {
+            background-color: #00BFFF; /* Deep Sky Blue */
+            color: #FFF; /* White for text */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .form-container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #FFF;
+            border: 1px solid #000;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Surf Company</h1>
+        <button class="button">Shop Now</button>
+    </header>
+
+    <div class="product">
+        <h2>Product 1</h2>
+        <img src="product1.jpg" alt="Product 1 Image" width="200">
+        <p>Description of Product 1.</p>
+    </div>
+
+    <div class="product">
+        <h2>Product 2</h2>
+        <img src="product2.jpg" alt="Product 2 Image" width="200">
+        <p>Description of Product 2.</p>
+    </div>
+
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Surf Company. All rights reserved.</p>
+    </div>
+
+    <script>
+        // Example JavaScript to add interactivity
+        document.querySelector('.button').addEventListener('click', function() {
+            alert('Shop Now button clicked!');
+        });
+    </script>
+</body>
+</html>
